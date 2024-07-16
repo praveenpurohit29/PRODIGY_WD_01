@@ -1,0 +1,229 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+        background-color: #f8f9fa; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#home  {
+    background-image: url('books_background.jpg'); 
+    background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #fff;  
+            text-align: center; 
+            padding: 150px 20px 50px; 
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: larger;
+font-weight: bolder;}
+
+#authors, #genres {
+    padding: 50px 20px; 
+    text-align: left; 
+}
+.book {
+    margin-bottom: 30px;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: none; }
+.book.show {
+    display: block; 
+}
+.book img {
+    max-width: 100px; 
+    border-radius: 8px; 
+    margin-right: 20px; 
+}
+.book-info {
+    display: flex; 
+    align-items: center;
+}
+
+.book h3 {
+    font-size: 1.4em; 
+    margin: 5px 0; 
+}
+.book p {
+    font-size: 1.1em; 
+    color: #0d0202; 
+    line-height: 1.5; 
+}
+.genres-list {
+    list-style-type: none; 
+    padding: 0;
+    margin-bottom: 20px; 
+}
+.genres-list li {
+    display: inline-block; 
+    margin-right: 10px;
+}
+.genres-list li a {
+    text-decoration: none; 
+    background-color: #007bff; 
+    color: #4e2c2c;
+    padding: 10px 20px; 
+    border-radius: 4px;  
+    cursor: pointer; 
+}
+.genres-list li a:hover {
+    background-color: #0056b3; 
+}
+
+.genres-list li a.all-books {
+    background-color: #28a745; 
+}
+.genres-list li a.all-books:hover {
+    background-color: #218838; 
+}
+.author {
+    margin-bottom: 30px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.author img {
+    max-width: 100px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+}
+.author-info {
+    display: flex; 
+    align-items: center; 
+}
+.author h3 {
+    font-size: 1.4em; 
+    margin: 5px 0; 
+}
+.author p {
+    font-size: 1.1em; 
+    color: #666; 
+    line-height: 1.5; 
+}
+.author p {
+    font-size: 1.1em; 
+    color: #666; 
+    line-height: 1.5; 
+}
+.more-button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-top: 20px; 
+}
+.more-button:hover {
+    background-color: #0056b3; 
+}
+
+
+nav.scrolled {
+    background-color: #222;
+}
+
+#contact {
+    background-image: url('images/contact_bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #aa4b4b; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-info {
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+#genres {
+    background-image: url('images/genres_bg.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: #fff; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#authors {background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #3399a2; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+#books {background-image: url('images/books_bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #230c52; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-weight:bold;
+    font-style: italic;
+}
